@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function traduireSort(sort,langue){
+        const sortTraduction={
+            "boule de feu": { fr: "Boule de feu", en: "Fireball" },
+            "lumiere" : {fr: "lumiere", en: "lunos"},
+            "eclaire": { fr: "eclaire", en: "lumos"},
+            "disparition": {fr:"disparition", en: "disapear"},
+            "multiclonage":{fr:"clonage", en:"cloning"},
+            "teleportation": {fr:"teleportation", en:"teleportation"}
+        }
+        if (sortTraduction[sort]) {if (sortTraduction[sort][langue]) {
+            return sortTraduction[sort][langue];
+            
+        } else { return "langue inconne"
+            
+        }
+            
+        } else {
+            return "sort inconnue"
+            
+        }
+       }
+
+       console.log(traduireSort("eclaire","fr"))
+       console.log(traduireSort("lumiere","en"))
+       console.log(traduireSort("xyz","fr"))
+       console.log(traduireSort("multiclonage","en"))
+   </script> 
+</body>
+</html>
+
+
