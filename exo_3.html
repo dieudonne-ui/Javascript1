@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortDeCombat(attaquant, defenseur, puissance, precision) {
+    
+          if (puissance < 1 || puissance > 100) {
+        console.log("Puissance non prise en compte");
+          }
+    
+
+       if (precision < 0 || precision > 1) {
+        console.log("Précision non valide");
+    
+         }
+    
+    
+    let degats = puissance * precision;
+    
+    if (precision < 0.5) {
+        console.log(`Échec du sort !`);
+    }
+    
+}
+
+console.log(sortDeCombat("ange", "demon", 80, 0.7)
+
+)
+
+    </script>
+</body>
+</html>

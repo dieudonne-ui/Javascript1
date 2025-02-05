@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ailesDeChauve = 10;
+        let sangDeDragon = 20; 
+        let veninDeCobra = 30;
+        let prix = 0;
+    
+        function calculerPotion(a, b, c) {
+            prix = prix + 5 + a * ailesDeChauve + b * sangDeDragon + c * veninDeCobra;
+    
+            if (prix > 100) {
+                return number((  prix - prix * 0.1)).tofixed(0);
+            } else {
+                return prix;
+            }
+        }
+    
+        console.log(calculerPotion(2, 1, 1));
+    </script>
+</body>
+</html>
