@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Chien {
+            //Attributs
+             PATE = 4
+             couleur;
+             taille;
+             forme;
+           
+            //Methodes
+            mordre(prenom){
+             console.log (`Mon chien à ${this.PATE} pates  de couleur ${this.couleur} mesurant ${this.taille}cm avec une forme ${this.forme} a mordue ${prenom}`)}
+              aboyer(voleur,visiteur){
+                console.log(`pf pfof wof wof ${voleur} wow wow wow wo wo ${visiteur} `)}
+                //Constuctor
+            constructor (PATE,couleur,taille,forme){
+                  this.PATE= PATE
+                    this.couleur = couleur
+                    this.taille = taille
+                    this.forme = forme
+                }
+        }
+        let pipo = new Chien(4,"jaune",90,"ovoide"); 
+        console.log(pipo.mordre(`Franck`),pipo.aboyer("voleur","etranger"))
+    </script>
+</body>
+</html>
